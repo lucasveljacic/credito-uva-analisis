@@ -65,9 +65,6 @@
  *
  */
 
-define('MONTO', 'MONTO');
-define('PORCENTAJE', 'PORCENTAJE');
-
 // default values for parameters
 $withoutInflation = false;
 $factorAdelanto = 1;
@@ -119,7 +116,6 @@ foreach ($argv as $key => $argument) {
             // en que momento considero que ya no se justifica adelantar.
             // 25 -> significa que si el valor de la cuota pura es solo un 25% menor que la cuota entonces, no adelanto.
             $porcentajeCorteAdelantar = (int) $argv[$key + 1];
-            $estrategia = PORCENTAJE;
             break;
         default:
             break;
